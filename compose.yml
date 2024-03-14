@@ -34,7 +34,7 @@ services:
       - /mnt/store/data/:/data
 
   scrutiny-collector:
-    image: ghcr.io/analogj/scrutiny:v0.7.3-collector
+    image: ghcr.io/analogj/scrutiny:v0.8.0-collector
     hostname: scrutiny-collector
     container_name: scrutiny-collector
     restart: unless-stopped
