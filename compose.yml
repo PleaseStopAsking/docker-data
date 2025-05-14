@@ -5,8 +5,10 @@ services:
     container_name: cadvisor
     hostname: cadvisor
     image: gcr.io/cadvisor/cadvisor:v0.52.1
+    command:
+      - '-port=8098'
     ports:
-      - 8080:8080
+      - 8098:8098
     restart: always
     volumes:
       - /:/rootfs:ro
